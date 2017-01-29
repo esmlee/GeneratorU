@@ -1,2 +1,0 @@
-# GeneratorU
-McHacks
