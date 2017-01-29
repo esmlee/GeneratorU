@@ -1,6 +1,6 @@
 var resp = [0,0,0,0]
 
-function increaseCount(opt) {
+function increaseCount(opt, ele) {
 	if (opt == 'a') {
 		resp[0]++;
 	} else if (opt == 'b') {
@@ -9,6 +9,10 @@ function increaseCount(opt) {
 		resp[2]++;
 	} else if (opt == 'd') {
 		resp[3]++;
+	}
+	var q = ele.id.charAt(0);
+	for (var i=0; i <= resp.length; i++) {
+		document.getElementById(q + '.' + i).style.display = 'none';
 	}
 }
 
@@ -21,13 +25,13 @@ function calculateResult() {
 			letter = String.fromCharCode(97 + i);
 		}
 	}
-	var res = 'Empty for now';
+	var res = 'No results yet!';
 
 	// replace each 'out_' with a personality trait or sumthin
 	if (letter == 'a') {
-		res = 'out1';
+		res = "You deserve a lovely caring SO!";
 	} else if (letter == 'b') {
-		res = 'out2';
+		res = "You need someone to keep you interested!";
 	} else if (letter == 'c') {
 		res = 'out3';
 	} else if (letter == 'd') {

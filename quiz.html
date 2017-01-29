@@ -22,17 +22,17 @@
         </div>
         <div class="row">
           <div class="col-md-12">
-            <p>I speak without thinking, and have to tell people close to me I didn't
+            <p id="1.0">I speak without thinking, and have to tell people close to me I didn't
               mean what I said</p>
           </div>
         </div>
       </div>
     </div>
     <h1 class="text-center"></h1>
-    <input id="clickMe" type="button" value="Omg that's me" onclick="increaseCount('a');">
-    <input id="clickMe" type="button" value="Sometimes" onclick="increaseCount('a');">
-    <input id="clickMe" type="button" value="Not really" onclick="increaseCount('b');">
-    <input id="clickMe" type="button" value="No way" onclick="increaseCount('b');">
+    <input id="1.1" type="button" value="Omg that's me" onclick="increaseCount('a', this);">
+    <input id="1.2" type="button" value="Sometimes" onclick="increaseCount('a', this);">
+    <input id="1.3" type="button" value="Not really" onclick="increaseCount('b', this);">
+    <input id="1.4" type="button" value="No way" onclick="increaseCount('b', this);">
     <div class="section">
       <div class="container">
         <div class="row">
@@ -46,16 +46,16 @@
         </div>
         <div class="row">
           <div class="col-md-12">
-            <p>Me: What you see is what you get. I am open to people about who I am and
+            <p id="2.0">Me: What you see is what you get. I am open to people about who I am and
               what I think</p>
           </div>
         </div>
       </div>
     </div>
-    <input id="clickMe" type="button" value="Omg that's me" onclick="increaseCount('a');">
-    <input id="clickMe" type="button" value="Sometimes" onclick="increaseCount('a');">
-    <input id="clickMe" type="button" value="Not really" onclick="increaseCount('b');">
-    <input id="clickMe" type="button" value="No way" onclick="increaseCount('b');">
+    <input id="2.1" type="button" value="Omg that's me" onclick="increaseCount('a', this);">
+    <input id="2.2" type="button" value="Sometimes" onclick="increaseCount('a', this);">
+    <input id="2.3" type="button" value="Not really" onclick="increaseCount('b', this);">
+    <input id="2.4" type="button" value="No way" onclick="increaseCount('b', this);">
     <div class="section">
       <div class="container">
         <div class="row">
@@ -69,15 +69,15 @@
         </div>
         <div class="row">
           <div class="col-md-12">
-            <p>I think through talking about my thoughts to others</p>
+            <p id = "3.0">I think through talking about my thoughts to others</p>
           </div>
         </div>
       </div>
     </div>
-    <input id="clickMe" type="button" value="Omg that's me" onclick="increaseCount('a');">
-    <input id="clickMe" type="button" value="Sometimes" onclick="increaseCount('a');">
-    <input id="clickMe" type="button" value="Not really" onclick="increaseCount('b');">
-    <input id="clickMe" type="button" value="No way" onclick="increaseCount('b');">
+    <input id="3.1" type="button" value="Omg that's me" onclick="increaseCount('a', this);">
+    <input id="3.2" type="button" value="Sometimes" onclick="increaseCount('a', this);">
+    <input id="3.3" type="button" value="Not really" onclick="increaseCount('b', this);">
+    <input id="3.4" type="button" value="No way" onclick="increaseCount('b', this);">
     <div class="section">
       <div class="container">
         <div class="row">
@@ -90,16 +90,17 @@
           <div class="col-md-12"></div>
         </div>
         <div class="row">
-          <div class="col-md-12"></div>
+          <div class="col-md-12">
+	        <p id="4.0">People close to me have to asked: What are you thinking? What's on your
+	          mind?</p>
+          </div>
         </div>
-        <p>People close to me have to asked: What are you thinking? What's on your
-          mind?</p>
-        <input id="clickMe" type="button" value="Omg that's me" onclick="increaseCount('b');">
-        <input id="clickMe" type="button" value="Sometimes" onclick="increaseCount('b');">
-        <input id="clickMe" type="button" value="Not really" onclick="increaseCount('a');">
-        <input id="clickMe" type="button" value="No way" onclick="increaseCount('a');">
       </div>
     </div>
+    <input id="4.1" type="button" value="Omg that's me" onclick="increaseCount('b', this);">
+    <input id="4.2" type="button" value="Sometimes" onclick="increaseCount('b', this);">
+    <input id="4.3" type="button" value="Not really" onclick="increaseCount('a', this);">
+    <input id="4.4" type="button" value="No way" onclick="increaseCount('a', this);">
     <div class="section">
       <div class="container">
         <div class="row">
@@ -112,16 +113,17 @@
           <div class="col-md-12"></div>
         </div>
         <div class="row">
-          <div class="col-md-12"></div>
+          <div class="col-md-12">
+        	<p id="5.0">I generally keep my personal life and ideas to myself</p>
+        	</div>
         </div>
-        <p>I generally keep my personal life and ideas to myself</p>
-        <input id="clickMe"
-        type="button" value="Omg that's me" onclick="increaseCount('b');">
-        <input id="clickMe" type="button" value="Sometimes" onclick="increaseCount('b');">
-        <input id="clickMe" type="button" value="Not really" onclick="increaseCount('a');">
-        <input id="clickMe" type="button" value="No way" onclick="increaseCount('a');">
       </div>
     </div>
+    <input id="5.1"
+    type="button" value="Omg that's me" onclick="increaseCount('b', this);">
+    <input id="5.2" type="button" value="Sometimes" onclick="increaseCount('b', this);">
+    <input id="5.3" type="button" value="Not really" onclick="increaseCount('a', this);">
+    <input id="5.4" type="button" value="No way" onclick="increaseCount('a', this);">
     <div class="row">
       <div class="col-md-12"></div>
     </div>
@@ -129,7 +131,7 @@
       <div class="col-md-12"></div>
     </div>
     <input id="clickMe2" type="button" value="Result" onclick="calculateResult();">
-    <p id="result"></p>
+    <h2 id="result"></h2>
   </body>
 
 </html>
