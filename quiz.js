@@ -1,4 +1,13 @@
-var resp = [0,0,0,0]
+var resp = [0,0,0,0];
+var numQuestions = 5;
+
+function setupPage() {
+	for (var q=2; q <= numQuestions; q++) {
+		for (var i=0; i <= resp.length; i++) {
+			document.getElementById(q + '.' + i).style.display = 'none';
+		}
+	}
+}
 
 function increaseCount(opt, ele) {
 	if (opt == 'a') {
@@ -11,9 +20,23 @@ function increaseCount(opt, ele) {
 		resp[3]++;
 	}
 	var q = ele.id.charAt(0);
+	var next = 1 + parseInt(q);
 	for (var i=0; i <= resp.length; i++) {
 		document.getElementById(q + '.' + i).style.display = 'none';
+		if (parseInt(q) == numQuestions) {
+			continue;
+		}
+		var nextElement = document.getElementById(next.toString() + '.' + i);
+		nextElement.style.display = 'unset';
+		if (i == 0) {
+			nextElement.scrollIntoView();
+		}
 	}
+}
+
+function increaseCount2(opt, ele) {
+	increaseCount(opt, ele);
+	increaseCount(opt, ele);
 }
 
 function calculateResult() {
@@ -38,4 +61,6 @@ function calculateResult() {
 		res = 'out4';
 	}
 	document.getElementById("result").innerHTML = res;
+	document.getElementById("result").scrollIntoView();
 }
+
